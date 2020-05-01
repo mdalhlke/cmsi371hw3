@@ -278,7 +278,7 @@ void display_func() {
 
     // TODO: Rotate the scene using the scene vector
     vector<GLfloat> scene = SCENE;
-    scene = mat_mult(rotation_matrix_x(THETA), scene);
+    //scene = mat_mult(rotation_matrix_x(THETA), scene);
     scene = to_cartesian_coord(scene);
     GLfloat* scene_vertices = vector2array(scene);
     GLfloat* color_vertices = vector2array(COLOR);
